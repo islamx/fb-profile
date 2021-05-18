@@ -1,0 +1,8 @@
+// MIXIN to collect position absolute items
+@mixin position-absolute($top,$left,$bottom,$right) {
+  @extend .position-absolute;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}

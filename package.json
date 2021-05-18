@@ -1,0 +1,26 @@
+{
+  "name": "facebook-profile",
+  "version": "1.0.0",
+  "description": "front-end practise",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/islamx/fb-profile.git"
+  },
+  "author": "Islam Abdelzaher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/islamx/fb-profile/issues"
+  },
+  "homepage": "https://github.com/islamx/fb-profile#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap-scss": "^4.6.0",
+    "jquery": "^3.6.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.0"
+  }
+}

@@ -1,0 +1,123 @@
+// VENDORS
+@import "../abstracts/mixins";                 //  Mixins
+@import "../abstracts/variables";             //   Variables
+@import "../vendors/bootstrap";              //   Bootrstrap
+@import "../vendors/font-awesome";          //    Font Awesoem
+
+
+// Profile
+
+body {
+  background: #18191a;
+  color: $white;
+}
+.my-profile {
+  .container {
+    max-width: 960px;
+  }
+  .profile-header  {
+    background-image: linear-gradient(to bottom, #baccda, #919ea9, #6b737a, #464a4e, #242526);
+  }
+  .profile-cover {
+    @extend .pt-2;
+    .cover-photo {
+      @extend .d-block;
+      @extend .rounded;
+      @extend .w-100;
+      object-fit: cover;
+      object-position: center;
+      height: 350px;
+    }
+  }
+  .profile-picture {
+    @include position-absolute(auto,0,-15px,0);  // Example for using MIXIN
+    .user-photo {
+      @extend .d-block;
+      @extend .mx-auto;
+      width: 170px;
+      height: 170px;
+      .img {
+        @extend .rounded-circle;
+        @extend .mx-auto;
+        @extend .img-fluid;
+        @extend .border;
+        @extend .border-dark;
+        border-width: 3px !important;
+      }
+    }
+  }
+  .profile-name {
+    @extend .container;
+    @extend .text-center;
+    @extend .pt-3;
+  }
+  .username {
+    font-size: $font-sz-lg;
+    @extend .font-weight-bold;
+    @extend .mb-0;
+  }
+  .profile-controller {
+    @extend .mb-3;
+    .content-holder {
+      @extend .border-top;
+      @extend .border-dark;
+      @extend .d-flex;
+      @extend .border-dark;
+      @extend .d-flex;
+      @extend .justify-content-between;
+      @extend .pt-2;
+    }
+    .navbar {
+      @extend .p-0;
+    }
+    .nav-link {
+      font-size: $font-sz-md;
+      @extend .font-weight-bold;
+      &,&:hover {
+        color: $gray-500;
+      }
+      &.active {
+      color: $primary;
+      border-bottom: 3px solid $primary;
+      }
+    }
+  }
+}
+.card {
+  background: #242526;
+}
+.intro-list {
+  li {
+    margin-bottom:10px;
+    font-size: $font-sz-sm;
+  }
+  .fas {
+    @extend .text-white-50;
+    @extend .pr-2;
+  }
+  a {
+    @extend .font-weight-bold;
+    @extend .text-white;
+  }
+}
+.photos {
+  @extend .p-3;
+  @extend .mb-3;
+  .col-4 {
+    padding: 5px;
+  }
+  .img-fluid {
+    margin-bottom: 10px;
+  }
+}
+.post-author {
+  line-height: 17px;
+}
+.post-controller {
+  a {
+    color: $gray-500;
+  }
+}
+.comment-controller {
+  font-size: $font-sz-sm;
+}
