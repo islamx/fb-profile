@@ -4,8 +4,6 @@ Make a facebook profile page
 
 ## Used library
 
-
-
 ```bash
 Bootstrap
 Font Awesome
@@ -19,3 +17,6 @@ Node Saas
 npm run saas *Compile scss to css*
 live-server  *Run live server*
 ```
+## Review site
+
+[Facebook Profile view](https://islamx.github.io/fb-profile/views/profile.html)
